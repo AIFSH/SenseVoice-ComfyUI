@@ -1,0 +1,5 @@
+modelscope
+huggingface
+huggingface_hub
+funasr>=1.1.0
+numpy<=1.26.4
