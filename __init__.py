@@ -56,7 +56,7 @@ class SenseVoiceNode:
         print(res[0]["text"])
         return (res[0]["text"],)
 
-class TextNode:
+class ShowTextNode:
     @classmethod
     def INPUT_TYPES(s):
         return {
@@ -65,7 +65,7 @@ class TextNode:
                 "text": ("STRING", {"multiline": True, "dynamicPrompts": True}),
             }
         }
-    RETURN_TYPES = ("TEXT",)
+    RETURN_TYPES = ()
     FUNCTION = "encode"
     OUTPUT_NODE = True
     CATEGORY = "AIFSH_SenseVoice"
@@ -77,6 +77,6 @@ class TextNode:
 WEB_DIRECTORY = "./js"
 
 NODE_CLASS_MAPPINGS = {
-    "TextNode":TextNode,
+    "ShowTextNode":ShowTextNode,
     "SenseVoiceNode": SenseVoiceNode
 }
