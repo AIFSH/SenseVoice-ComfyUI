@@ -1,0 +1,15 @@
+[project]
+name = "sensevoice-comfyui"
+description = "a custom node for [a/SenseVoice](https://github.com/FunAudioLLM/SenseVoice)"
+version = "1.0.0"
+license = "LICENSE"
+dependencies = ["modelscope", "huggingface", "huggingface_hub", "funasr>=1.1.0", "numpy<=1.26.4"]
+
+[project.urls]
+Repository = "https://github.com/AIFSH/SenseVoice-ComfyUI"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "SenseVoice-ComfyUI"
+Icon = ""
